@@ -8,9 +8,9 @@ CREATE DATABASE school;
 -- Use the database
 USE school;
 
--- Create a student table
+-- Create a student table in PostgreSQL
 CREATE TABLE students (
-    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
     age INT,
@@ -18,6 +18,17 @@ CREATE TABLE students (
 );
 
 
+```
+
+```sql
+-- Create a student table in MySQL
+CREATE TABLE students (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    age INT,
+    grade VARCHAR(10)
+);
 ```
 
 ## Inserting Data
